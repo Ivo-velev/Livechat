@@ -22,10 +22,7 @@
 - [Code and organization](#code-and-organization)
    - [The project folder: chat](#the-project-folder-chat)
    - [The App folders: core and room](#the-app-folders-core-and-room)
-   - [The static folder](#the-static-folder)
-   - [Templates](#templates)
-   - [Requirements](#requirements)
-   - [Third-party code](#third-party-code)
+- [Requirements](#requirements)
 - [About](#about)
 - [Distinctiveness and complexity](#distinctiveness-and-complexity)
 <br>
@@ -141,7 +138,7 @@ The Django chat application has the following structure:
 - The project does not feature any static JavaScript or Css files. Due to the use of script tags in the base.html file and the use of Tailwind Css.
 
 
-Let's take a look at what each app does.
+Let's take a look at what the app does.
 <br>
 
 ## The project folder: chat
@@ -152,13 +149,9 @@ The chat folder is the standard django application folder.
 ## The App folders: core and room
 
 ### **1. Core**
-Contains the files responsible for the homepage, sign-up, log-in and log-out. It is responsible for the creation of user accounts.
+Contains the files responsible for the homepage's sign-up, log-in and log-out functionality. It is responsible for the creation of user accounts.
 ### **2. Room**
-Contains most of Django chat's logic. This is where the live chat feature gets handled through the use of Websockets and Python and Javascript logic to handle the storage and displaying of chats entered into a chat room. This is also where the logic for displaying and joining a chat room is stored.
-<br>
-
-## Templates
-Each app counts with its own templates folder for their respective pages that they need to show. These are accessible from the login page.
+Contains Django chat's logic. This is where the live chat feature gets handled through the use of Websockets and Python and Javascript logic to handle the storage and displaying of chats entered into a chat room. This is also where the logic for displaying and joining a chat room is stored.
 <br>
 
 ## Requirements
@@ -166,9 +159,6 @@ As noted in the installation instructions, a requirements.txt file will be featu
 
 The requirements.txt hold dependencies such as daphne.
 <br>
-
-## Third-party code
-Writing the codebase required some research. Source for media such as icons are included in the code. 
 
 # About
 This project is my submission as the capstone project for CS50w from HarvardX.
