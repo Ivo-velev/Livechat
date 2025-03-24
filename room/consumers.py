@@ -55,7 +55,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
     def save_message(self, username, room, message):
         try:
             user = User.objects.get(username=username)
-            room = Room.objects.get(slug=room)  # Fixed typo: "objetcs" -> "objects"
+            room = Room.objects.get(slug=room)  
             Message.objects.create(user=user, room=room, content=message)
         except User.DoesNotExist:
             print(f"User '{username}' does not exist.")
